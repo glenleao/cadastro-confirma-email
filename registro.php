@@ -12,27 +12,30 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/animate.css">
-    <!-- <link rel="stylesheet" href="../css/style.css"> -->
-	<title>Armário de ferramentas - Formulario de cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+	<title>Armário de ferramentas - Formulário de cadastro</title>
 </head>
 <body>
   <div class="container my-5 ">
     <div class="row justify-content-center">
-    <div class="col-md-4 card p-5">
-<form  method="post" action="verifica.php">
+    <div class="col-md-4 p-5">
+<form  method="post" action="cadastro.php">
   <div align="center">
-  <h1 class="h3 mb-3 font-weight-normal">Sistema de Login</h1>
+  <h1 class="h3 mb-3 display-4 text-white">Cadastro de usuário</h1>
 <div class="form-group">
   <label for="inputNome" class="sr-only">Nome</label>
   <input type="text" name="user" class="form-control" placeholder="Nome">
 </div>
-
+<div class="form-group">
+  <label for="inputEmail" class="sr-only">Email</label>
+  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+</div>
 <div class="form-group">
   <label for="inputPassword" class="sr-only">Senha</label>
   <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha" required>
 </div>
 
-  <button class="btn btn-lg btn-info btn-block" type="submit">Logar</button>
+  <button class="btn btn-info btn-block" type="submit">Cadastrar</button>
   <p class="mt-5 mb-3 text-muted">&copy; KG-2019</p>
   </div>
 </form></div></div></div>
