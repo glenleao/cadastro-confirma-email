@@ -13,9 +13,10 @@ try {
 $usuario = addslashes($_POST['user']);
 $email = addslashes($_POST['email']);
 $senha = md5(addslashes($_POST['senha']));
+$ip = $_SERVER['REMOTE_ADDR'];
 
 // Aqui insere os dados no banco
-$pdo->query("INSERT INTO cadastro SET usuario='$usuario', email='$email', senha='$senha'");
+$pdo->query("INSERT INTO cadastro SET usuario='$usuario', email='$email', senha='$senha', ip=$ip");
 
 // identifica o id do usuario para envio do email
 $id = $pdo->lastInsertId();

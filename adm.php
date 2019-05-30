@@ -25,6 +25,8 @@ try {
 }catch (PDOExecption $e){
 	echo "Falha: ". $e->getMessage();
 }
+session_start();
+if($_SESSION['usuario'] == true)
 $sql = $pdo->$pdo -> query("SELECT * FROM cadastro");
 foreach ($sql as $variavel) {
 	echo "<tr>";
