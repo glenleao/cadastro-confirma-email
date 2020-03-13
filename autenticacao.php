@@ -2,8 +2,8 @@
 
 // conexao com o banco de dados
 $host = "mysql:dbname=id9703094_bd_dados;host=localhost";
-$usuario = "id9703094_kg18";
-$pass = "gln0621";
+$usuario = "id9703094_****";
+$pass = "********";
 
 try{
 	$pdo = new PDO($host, $user, $pass);
